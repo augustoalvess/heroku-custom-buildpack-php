@@ -762,5 +762,3 @@ cp $build_dir/config/autoload/config.ini.prod $build_dir/config/autoload/config.
 $build_dir/vendor/bin/doctrine-module orm:schema-tool:update --dump-sql --force
 yes | $build_dir/vendor/bin/doctrine-module migrations:migrate
 ln -s $build_dir/vendor/zfcampus/zf-apigility-admin-ui/dist/apigility-ui $build_dir/public/.
-
-exit 0

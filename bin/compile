@@ -1,4 +1,5 @@
 cp $1/config/autoload/config.ini.prod $1/config/autoload/config.ini
+ln -sf $1/vendor/zfcampus/zf-apigility-admin-ui/dist/apigility-ui $1/public/.
 $1/vendor/bin/doctrine-module orm:schema-tool:update --dump-sql --force
 yes | $1/vendor/bin/doctrine-module migrations:migrate
 

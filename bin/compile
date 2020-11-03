@@ -1,5 +1,5 @@
 cp $1/config/autoload/config.ini.prod $1/config/autoload/config.ini
 $1/vendor/bin/doctrine-module orm:schema-tool:update --dump-sql --force
-yes && $1/vendor/bin/doctrine-module migrations:migrate
+yes | $1/vendor/bin/doctrine-module migrations:migrate
 
 exit 0

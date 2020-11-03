@@ -760,6 +760,6 @@ unset COMPOSER_bak
 
 cp $build_dir/config/autoload/config.ini.prod $build_dir/config/autoload/config.ini
 $build_dir/vendor/bin/doctrine-module orm:schema-tool:update --dump-sql --force
-yes | $build_dir/vendor/bin/doctrine-module migrations:migrate
+#yes | $build_dir/vendor/bin/doctrine-module migrations:migrate
 
 exit 0
